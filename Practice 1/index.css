@@ -15,9 +15,10 @@ html {
 
 /* Improve readability by adjusting default font settings */
 body {
+  background-color: var(--main-bg-color);
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
-  color: #333;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -35,6 +36,9 @@ body>header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #3b485a;
 
   div {
     display: flex;
@@ -42,9 +46,9 @@ body>header {
     align-items: center;
   }
 
-  div nav{
+  div nav {
     display: flex;
-    gap: 1.2rem;    
+    gap: 1.2rem;
   }
 
   img {
@@ -57,18 +61,18 @@ body>header {
     text-decoration: none;
   }
 
-  aside{
+  aside {
     display: flex;
     align-items: center;
     gap: 0.8rem;
 
-    img{
+    img {
       width: 40px;
       border-radius: 100%;
     }
   }
 
-  button{
+  button {
     background-color: #0f2b44;
     border: none;
     color: var(--second-color);
@@ -76,7 +80,53 @@ body>header {
     border-radius: 10px;
     font-weight: 700;
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  >h1 {
+    font-size: 42px;
+    line-height: 0;
+    margin-top: 70px;
+  }
+
+  >p {
+    line-height: 0;
+    color: var(--aside-color);
+    margin-bottom: 40px;
+  }
+
+  >div {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3b485a;
+    border-radius: 10px;
+    background-color: #18212d;
+    align-items: center;
+    padding: 2px;
+
+    svg path{
+      fill: #3b485a;      
+    }
+
+    input {
+      padding: 0.5rem;
+      width: 80vw;
+      background-color: #18212d;
+      border: none;
+      border-radius: 10px;
+      font-size:medium;
+      color: white;
+    }
+  }
 
 }
 
-
+input::placeholder {
+  color: #4e5563;
+}
