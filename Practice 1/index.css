@@ -100,7 +100,13 @@ main {
     margin-bottom: 40px;
   }
 
-  >div {
+  >section{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  >section div {
     display: flex;
     border-style: solid;
     border-width: 1px;
@@ -110,8 +116,8 @@ main {
     align-items: center;
     padding: 2px;
 
-    svg path{
-      fill: #3b485a;      
+    svg path {
+      fill: #3b485a;
     }
 
     input {
@@ -120,8 +126,21 @@ main {
       background-color: #18212d;
       border: none;
       border-radius: 10px;
-      font-size:medium;
+      font-size: medium;
       color: white;
+    }
+  }
+
+  >section>nav {
+    display: flex;
+    gap: 13px;
+
+    select {
+      background-color: #242d3a;
+      border: none;
+      padding: 0.5rem;
+      color: white;
+      border-radius: 10px;
     }
   }
 
