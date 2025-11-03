@@ -1,0 +1,90 @@
+/* Resetting the default box-sizing for better consistency */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    /* Ensures all elements use the same box-sizing model */
+}
+
+:root {
+    --header-bg-color: black;
+    --subheader-bg-color: #ec1c65;
+    --main-bg-color: #f5f5ff;
+    --secondary-color: #673de6;
+    --banner-color: #ccfe01;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5ff;
+    margin: 0;
+    padding: 0;
+}
+
+body>header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+
+    section>svg path {
+        fill: white;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 25px;
+
+        li {
+            display: flex;
+
+        }
+    }
+}
+
+header>section div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+header>section:nth-child(2) {
+    gap: 15px;
+
+    button {
+        font-family: "DM Sans", sans-serif;
+        font-size: medium;
+        border: none;
+        background-color: var(--header-bg-color);
+        color: white;
+        font-weight: 600;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 7px;
+        padding: 0.6rem 1rem;
+    }
+}
+
+.bandera {
+    width: 32px;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 2px;
+}
