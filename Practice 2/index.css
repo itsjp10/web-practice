@@ -146,11 +146,11 @@ main>header {
 
 .cards {
     display: grid;
-    width: 50.33vw;
+    width: 40vw;
     /*width: 33.33vw;*/
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    margin-top: 70px;
+    margin-top: 40px;
 
     article {
         display: flex;
@@ -302,4 +302,22 @@ footer{
     img{
         width: 176px;
     }
+}
+
+.badge{
+    background-color: var(--secondary-color);
+    padding: 1px;
+    border-radius: 20px;
+    .badge-title{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px;
+        margin: 0%;
+    }
+}
+
+.premium{
+    margin-top: 41px;
 }
