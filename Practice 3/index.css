@@ -1,0 +1,15 @@
+/* Resetting the default box-sizing for better consistency */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    /* Ensures all elements use the same box-sizing model */
+}
+
+:root {
+    
+}
