@@ -20,46 +20,77 @@ html {
     --lightbrown: #F9F6F1;
 }
 
-body{
+body {
     margin: 0%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body>header {
-    .social {        
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .social {    
+        width: 100%;
         height: 48px;
         background-color: var(--lightred);
-        padding: 1rem 10%;
-        div{
+        display: flex;
+        justify-content: center;
+        .padre{
+            height: 48px;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--lightred);
+        }
+        .search-section {
             display: flex;
             align-items: center;
             gap: 3px;
-            input{
+
+            input {
                 width: 200px;
                 border: none;
                 background-color: var(--lightred);
                 color: black;
             }
         }
-        ul{
+
+        ul {
             display: flex;
             gap: 10px;
             list-style: none;
-            svg{
+
+            svg {
                 width: 24px;
                 height: auto;
             }
         }
     }
 
-    .info{
-        
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        color: #2A2B2A;
+        font-weight: 400;
+        width: 80%;
+        padding: 20px 0;
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0%;
+        }
+        img{
+            width: 300px;
+        }
+        border-bottom: 3px solid ;
+
     }
 
-    input::placeholder{
+    input::placeholder {
         text-transform: uppercase;
         color: #2A2B2A;
         font-family: monospace;
