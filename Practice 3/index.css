@@ -29,13 +29,15 @@ body>header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .social {    
+
+    .social {
         width: 100%;
         height: 48px;
         background-color: var(--lightred);
         display: flex;
         justify-content: center;
-        .padre{
+
+        .padre {
             height: 48px;
             width: 80%;
             display: flex;
@@ -44,6 +46,7 @@ body>header {
             justify-content: space-between;
             background-color: var(--lightred);
         }
+
         .search-section {
             display: flex;
             align-items: center;
@@ -72,21 +75,24 @@ body>header {
     .info {
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         color: #2A2B2A;
         font-weight: 400;
         width: 80%;
         padding: 20px 0;
+
         ul {
             display: flex;
             gap: 20px;
             list-style: none;
             padding: 0%;
         }
-        img{
+
+        img {
             width: 300px;
         }
-        border-bottom: 3px solid ;
+
+        border-bottom: 3px solid;
 
     }
 
@@ -95,5 +101,65 @@ body>header {
         color: #2A2B2A;
         font-family: monospace;
         letter-spacing: 1px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding-top: 2.5rem;
+
+        >div {
+            width: 250px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            h2 {
+                text-wrap: wrap;
+                font-size: 18px;
+                margin: 0%;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        h1 {
+            margin: 0%;
+            text-transform: uppercase;
+            font-size: 36px;
+        }
+
+        aside {
+            font-family: monospace;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-right: 25px;
+            a {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                letter-spacing: 1px;
+                text-decoration: none;
+                color: #2A2B2A;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .recipes{
+        padding-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
