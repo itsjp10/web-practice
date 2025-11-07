@@ -228,6 +228,8 @@ main {
     .pick {
         width: 80%;                        
         overflow: hidden;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
 
         article {
             display: grid;
@@ -281,7 +283,62 @@ main {
             }
         }
     }
+
+    .email-CTA{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        background-color: var(--green);
+        color: white;        
+        padding: 0.6rem 2rem;
+
+        h3{
+            color: var(--lightred);
+            font-size: 28px;
+            max-width: 240px;
+            margin-right: 15px;
+           
+        }
+
+        p{
+            font-size: 17px;
+        }
+
+        >div{
+            display: flex;
+            border: none;
+            margin-left: 15px;            
+            input{
+                height: 60px;
+                border: inherit;
+                padding: 0 1.3rem;
+                font-weight: lighter;      
+                font-size: 16px;    
+                      
+            }
+            input::placeholder{
+                color: #2A2B2A;
+                font-family: monospace;
+                letter-spacing: 2px;
+            }
+            button{
+                background-color: var(--lightred);
+                border: inherit;
+                font-family: inherit;
+                font-size: 16px;
+                padding: 0 1.3rem;
+                font-weight: bold;
+            }
+        }
+    }
 }
+
+
+
+
+
+
 
 ul {
     list-style: none;
