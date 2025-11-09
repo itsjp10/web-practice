@@ -344,8 +344,9 @@ main {
             flex-direction: column;
             width: 80%;
             margin-top: 40px;
+            
 
-            div{
+            div:first-child{
                 display: flex;     
                 align-items: center;     
                 background-color: white;      
@@ -385,7 +386,8 @@ main {
                 background-color: white;
                 width: 70%;
                 padding: 10px;
-                padding-bottom: 25px;
+                padding-bottom: 25px;                
+                
                 h3{
                     margin-top: 1rem;
                     text-transform: uppercase;
@@ -402,6 +404,26 @@ main {
                         gap: 5px;
                     }
                 }
+            }
+            .separador{
+                width: 70%;
+                padding-top: 60px;
+                border-bottom: 1px solid black;
+            }
+        }
+
+        .recent{
+            width: 80%;
+            header{
+                width: 70%;
+            }
+            article{
+                width: 70%;
+            }
+            img{
+                width: 130px;
+                height: 130px;
+                
             }
         }
     }
