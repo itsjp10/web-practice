@@ -413,8 +413,13 @@ main {
         }
 
         .recent{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             width: 80%;
             margin-top: 2rem;
+            color: #2A2B2A;
+
             header{
                 display: flex;
                 align-items: center;
@@ -426,8 +431,10 @@ main {
             article{
                 display: flex;
                 align-items: center;
+                gap: 15px;
                 width: 70%;
                 background-color: white;
+                position: relative;
                 p{
                     font-size: 18px;
                 }
@@ -435,6 +442,9 @@ main {
                     width: 130px;
                     height: 130px;
                     overflow: clip;
+                }
+                h3{
+                    font-size: xx-large;
                 }
             }
             img{
@@ -448,6 +458,15 @@ main {
                 padding: 0;
                 padding-right: 20px;
                 margin: 0;
+            }
+            .bola{      
+                position: absolute;          
+                background-color: white;
+                width: 30px;
+                height: 30px;
+                left: 115px; 
+                top: 50px; 
+                border-radius: 50%;              
             }
         }
     }
