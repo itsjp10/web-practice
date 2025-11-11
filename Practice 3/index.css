@@ -469,6 +469,13 @@ main {
                 border-radius: 50%;              
             }
         }
+        article:hover{                        
+            background-color: var(--green);
+            .bola{
+                background-color: var(--green);
+            }
+            color: white;
+        }
     }
 }
 
