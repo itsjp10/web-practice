@@ -414,16 +414,40 @@ main {
 
         .recent{
             width: 80%;
+            margin-top: 2rem;
             header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 width: 70%;
+                font-size: 18px;
+                text-transform: uppercase;
             }
             article{
+                display: flex;
+                align-items: center;
                 width: 70%;
+                background-color: white;
+                p{
+                    font-size: 18px;
+                }
+                div{
+                    width: 130px;
+                    height: 130px;
+                    overflow: clip;
+                }
             }
             img{
                 width: 130px;
-                height: 130px;
+                height: auto;
                 
+            }
+            ul{
+                display: flex;
+                gap: 10px;
+                padding: 0;
+                padding-right: 20px;
+                margin: 0;
             }
         }
     }
