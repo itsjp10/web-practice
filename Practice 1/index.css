@@ -184,6 +184,10 @@ main {
           margin-top: 20px;
 
         }
+
+        &.filtered {
+          display: none;
+        }
       }
 
       article:nth-child(4) {
@@ -232,7 +236,7 @@ main>nav {
     cursor: pointer;
   }
 
-  a:nth-child(2){
+  a:nth-child(2) {
     background-color: var(--second-color);
     padding: 0.5rem 1rem;
     border-radius: 7px;

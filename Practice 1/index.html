@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script type="module" src="./index.js"></script>
 </head>
 
 <body>
@@ -40,10 +41,19 @@
             </div>
             <nav>
                 <select name="Tecnologia" id="tecnologia">
-                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="SQL">SQL</option>
+                    <option value="React">React</option>
+                    <option value="Node.js">Node.js</option>
+                    <option value="Swift">Swift</option>
+                    <option value="AWS">AWS</option>
                 </select>
                 <select name="Ubicacion" id="ubicacion">
                     <option value="Ubicacion">Ubicacion</option>
+                    <option value="Remoto">Remoto</option>
+                    <option value="Ciudad de México">Ciudad de México</option>
+                    <option value="Guadalajara">Guadalajara</option>
                 </select>
                 <select name="Tipo de contrato" id="tipoContrato">
                     <option value="Tipo de contrato">Tipo de contrato</option>
@@ -56,47 +66,47 @@
         <section class="resultados">
             <h2>Resultados de búsqueda</h2>
             <div>
-                <article>
+                <article class="post">
                     <header>
                         <h3>Ingeniero de Software</h3>
                         <p>Tech Solutions Inc. | Remoto</p>
                     </header>
-                    <p>Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                    <p class="contenido">Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
                         JavaScript, React y Node.js. El candidato deal debe ser capaz de trabajar en equipo y tener
                         buenas habilidades de comunicación.</p>
                     <footer>
                         <button type="button">Aplicar</button>
                     </footer>
                 </article>
-                <article>
+                <article class="post">
                     <header>
                         <h3>Analista de Datos</h3>
                         <p>Data Driven Co. | Ciudad de México</p>
                     </header>
-                    <p>Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos
+                    <p class="contenido">Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos
                         y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.</p>
                     <footer>
                         <button type="button">Aplicar</button>
                     </footer>
                 </article>
-                <article>
+                <article class="post">
                     <header>
                         <h3>Desarrollador de Aplicaciones Móviles</h3>
                         <p>Mobile Apps Ltd. | Guadalajara</p>
                     </header>
-                    <p>Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El
+                    <p class="contenido">Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El
                         candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.
                     </p>
                     <footer>
                         <button type="button">Aplicar</button>
                     </footer>
                 </article>
-                <article>
+                <article class="post">
                     <header>
                         <h3>Ingeniero de DevOps</h3>
                         <p>Cloud Services SA | Remoto</p>
                     </header>
-                    <p>Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la
+                    <p class="contenido">Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la
                         nube, automatización de procesos y herramientas de integración continua. Se requiere
                         conocimiento en AWS, Azure o GCP.</p>
                     <footer>
