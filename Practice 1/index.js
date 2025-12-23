@@ -14,11 +14,11 @@ selectorTecnologia.addEventListener('change', () => {
     })
 })
 
-let searchInput = document.querySelector("#search-input")
-searchInput.addEventListener("focus", () => {
-    console.log("Se ha hecho foco")
-    setTimeout(()=>{
-        searchInput.blur()
-        console.log("Se ha quitado foco después de 1 seg")
-    }, 1000)
-})
+// let searchInput = document.querySelector("#search-input")
+// searchInput.addEventListener("focus", () => {
+//     console.log("Se ha hecho foco")
+//     setTimeout(()=>{
+//         searchInput.blur()
+//         console.log("Se ha quitado foco después de 1 seg")
+//     }, 1000)
+// })

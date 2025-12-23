@@ -132,7 +132,8 @@ main {
     }
   }
 
-  >section>nav {
+  >section .filtros-busqueda {
+    margin-top: 10px;
     display: flex;
     gap: 13px;
 
