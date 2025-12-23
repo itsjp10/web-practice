@@ -14,8 +14,8 @@ selectorTecnologia.addEventListener('change', () => {
     })
 })
 
-let searchInput = document.querySelector("#search-input")
-searchInput.addEventListener("blur", () => {
-    console.log("Se ha perdido el foco pero...")
-    searchInput.focus()
-})
+// let searchInput = document.querySelector("#search-input")
+// searchInput.addEventListener("blur", () => {
+//     console.log("Se ha perdido el foco pero...")
+//     searchInput.focus()
+// })
